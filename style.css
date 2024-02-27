@@ -558,13 +558,13 @@ section.contact .wrapper .right .form_group > div input:focus, section.contact .
 
 section.contact .wrapper .right .form_group.textarea_wrapper {
     display: block;
-    width: 100%;
+    width: 70%;
 
 }
 
 
 section.contact .wrapper .right button {
-    background: var(--dark);
+    background: var(--);
     border: none;
     padding: 1rem 2rem;
     color: var(--pure);
