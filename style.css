@@ -7,20 +7,20 @@
 :root {
 
     --primary: #1a0b1e;
-    --dark: #2c2234;
+    --dark: #37293a;
     --secondary: #6d74d8;
     --info: #3b1c61;
     --ternary: #a9a9cf;
     --pure: #f0e7f0;
-    --fade: #a2a3c0;
+    --fade: #8f6a99;
     --mild: #b8b3cb;
     --footer: #ccc4e0;
     --black: #0d0b21;
     --twitter: #2d263f;
-    --dribbble: #0a030c;
-    --success: #43bdb0;
+    --dribbble: #0b050a;
+    --success: #d59ade;
     --danger: #ff8c95;
-    --dark-blue: #465282;
+    --dark-blue: #233478;
     
 }
 
@@ -42,13 +42,14 @@
   body {
     font-size: 1.6rem;
     font-family: "Source Sans Pro", sans-serif;
-    color: #aebcb9;
+    color: #a9a9cf;
     background-color: #0d0d0d;
   }
   
   a {
     text-decoration: none;
   }
+  
 /*Reset*/
 *{
     margin:0;
@@ -96,20 +97,11 @@ nav .inner .logo{
     font-weight:600;
 }
 nav .inner .logo i{
-    color: var(--info);
+    color: var(--danger);
 }
-nav .inner button{
-    background: var(--secondary);
-    border: none;
-    padding: 0.6rem 1rem ;
-    color: var(--pure);
-    font-size:14px ;
-    border-radius: 4px;
-}
-
 
 nav .container .menu_btn  a{
-    background-color: rgba(31, 31, 32, 0.1);
+    background-color: rgba(90, 59, 95, 0.34);
     padding: 9px;
     color: var(--pure);
     margin-left: 50px;
@@ -118,7 +110,7 @@ nav .container .menu_btn  a{
    
 }
 section.profile {
-    background:var(--dribbble);
+    background:var(--primary);
     display: flex;
     align-items: center;
     padding: 3rem;
@@ -128,7 +120,6 @@ section.profile {
 }
 
 section.profile .left {
-    
    flex:2;
    display: flex;
    align-items: center;
@@ -141,7 +132,7 @@ section.profile .right {
 
 
 section.profile .left h2 {
-    color:var(--fade);
+    color:var(--danger);
     font-size: 25px;
     font-weight: 600;
     margin-bottom: 1rem;
@@ -177,7 +168,7 @@ section.profile .left .avator_block {
 
 section.profile .left .avator_block span{
     position: absolute;
-    background: var(--info);
+    background: var(--danger);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -235,13 +226,10 @@ section.profile .right ul.socials li:nth-child(2) a {
     background: var(--twitter);
 }
 section.profile .right ul.socials li:nth-child(3) a {
-    background: var(--mild);
+    background: var(--dark-blue);
 }
 section.profile .right ul.socials li:nth-child(4) a {
     background: var(--danger);
-}
-section.profile .right ul.socials li:nth-child(5) a {
-    background: var(--dark-blue);
 }
 
 .section_heading {
@@ -249,7 +237,7 @@ section.profile .right ul.socials li:nth-child(5) a {
     font-weight: 500;
     color: var(--pure);
     margin-bottom: 3rem;
-    text-shadow: 0 0 1px rgba(40,54,95,0.1);
+    text-shadow: 0 0 1px rgba(203, 206, 215, 0.83);
     position: relative; 
 }
 
@@ -259,7 +247,7 @@ section{
 }
 
 main{
-    background: var(--primary);
+    background: var(--dribbble);
 }
 
 .section_heading::after{
@@ -281,7 +269,7 @@ section.about .content {
 }
 
 section.about .content h2 {
-    color: var(--info);
+    color: var(--danger);
     font-size: 18px;
     line-height: 22px;
     font-weight: 700;
@@ -297,21 +285,6 @@ section.about .content p {
     margin-bottom: 5px;
 }
 
-section.about .content .left button {
-    background: rgba(184, 189, 201, 0.1);
-    color: var(--info);
-    padding: 6px 8px;
-    margin: 8%;
-    margin-left: 15%;
-    font-size: 12px;
-    border: none;
-    line-height: 24px;
-    outline: none;
-    cursor: pointer;
-    border-radius: 6%;
-    transition: background-color 0.3s ease; /* Adding a smooth transition */
-}
-
 section.about .content .left h4 {
     color: var(--pure);
     font-size: 10px;
@@ -323,7 +296,7 @@ section.about .content .left h4 {
 }
 
 section.about .content .left button:hover {
-    background-color: rgba(251, 251, 251, 0.8); /* Blueish color */
+    background-color: rgba(35, 81, 166, 0.8); 
 }
 
 
@@ -415,7 +388,7 @@ section.skills .content .left .item ::after {
     top: 5px;
     width: 10px;
     height: 10px;
-    border: 10px solid var(--info);
+    border: 10px solid var(--danger);
     border-radius: 50%;
     margin-left: -30px;
 }
@@ -444,7 +417,7 @@ section.skills .skills_wrapper .skill-box .progress_wrap {
 section.skills .skills_wrapper .skill-box .progress_wrap .progress_bar {
     display: block;
     height: 100%;
-    background:var(--info);
+    background:var(--fade);
     width: 0;
     position: relative;
     transition: all 1s ease-in-out;
@@ -464,7 +437,7 @@ section.skills .skills_wrapper .skill-box .progress_wrap .progress_bar .tooltip 
 
 section.project .left h2 {
     color:var(--fade);
-    font-size: 24px;
+    font-size: 20px;
     font-weight: 600;
     margin-bottom: 1rem;
 }
@@ -483,7 +456,7 @@ section.project .right ul.certificate {
 
 section.project .right ul.certificate li {
     margin-right: 0.8rem;
-    color: var(--mild);
+    color: var(--fade);
 }
 
 section.contact .wrapper {
@@ -506,7 +479,7 @@ section.contact .wrapper .left > div div:nth-child(1) {
 
 section.contact .wrapper .left i {
     font-size: 30px;
-    color: var(--info);
+    color: var(--success);
 }
 
 section.contact .wrapper .left h4 {
@@ -516,7 +489,7 @@ section.contact .wrapper .left h4 {
 }
 
 section.contact .wrapper .left {
-    color: var(--ternary);
+    color: var(--pure);
 }
 
 section.contact .wrapper .left h4 + span {
@@ -543,10 +516,10 @@ section.contact .wrapper .right .form_group > div label {
 }
 
 section.contact .wrapper .right .form_group > div input, section.contact .wrapper .right .form_group.textarea_wrapper textarea {
-    padding:  9px;
+    padding:  5px;
     border-radius:  100px;
     background: transparent;
-    border: 3px solid var(--footer);
+    border: 2px solid var(--success);
     font-size: 16px;
 }
 
@@ -564,10 +537,10 @@ section.contact .wrapper .right .form_group.textarea_wrapper {
 
 
 section.contact .wrapper .right button {
-    background: var(--);
+    background: var(--dribbble);
     border: none;
     padding: 1rem 2rem;
-    color: var(--pure);
+    color: var(--footer);
     font-size: 12x;
     border-radius: 100px;
     cursor: pointer;
